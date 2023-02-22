@@ -17,7 +17,7 @@ CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';
 SELECT user FROM mysql.user;
 ```
 
-![Список пользователей](ссылка на скриншот 1)
+![Список пользователей](img/12.02-01.png)
 
 
 4. `Добавление всех прав для пользователя sys_temp:`
@@ -29,7 +29,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost' WITH GRANT OPTION;
 ```
 SHOW GRANTS FOR 'sys_temp'@'localhost';
 ```
-![Список прав пользователя sys_temp](ссылка на скриншот 1)
+![Список прав пользователя sys_temp](img/12.02-02.png)
 
 6. `В задании указан пользователь sys-test, хотя раннее задавался пользователь sys_temp. В виду этого комманда выглядет так:`
 ```
@@ -44,7 +44,7 @@ mysql -usys_temp -ppassword sakila < ~/Загрузки/sakila-db/sakila-data.sq
 
 8. `Сформированная ER-диаграмму получившейся базы данных:`
 
-![ER-диаграмма](ссылка на скриншот 1)
+![ER-диаграмма](img/12.02-03.png)
 
 
 ---
@@ -53,7 +53,7 @@ mysql -usys_temp -ppassword sakila < ~/Загрузки/sakila-db/sakila-data.sq
 
 `Таблица востановленной базы с первичными ключами:`
 
-![Таблица с первичными ключами](ссылка на скриншот 2)
+![Таблица с первичными ключами](img/12.02-04.png)
 
 `У двух таблиц (film_actor, film_actor) по два первичных ключа.`
 `Таблица film_actor не имеет связей с другими таблицами.`
